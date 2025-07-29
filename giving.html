@@ -1,228 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Online Giving</title>
-    <link rel="shortcut icon" href="Img/church logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-    <style>
-         video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            object-fit: cover; /* Ensures the video fills the screen */
-            z-index: -1;
-        }
-    </style>
-</head>
-<body> 
-    <video autoplay loop muted src="Img/WhatsApp Video 2024-07-06 at 10.08.54_4f0e61b7.mp4">
-    </video>
-     <!-- Navigation Bar -->
-     <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="Img/church logo.jpg" alt="Church Logo" class="logo-img">
-            </div>
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Aboutus.html">Our Mission</a></li>
-                <li><a href="index.html#services">Ministries</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="sermon.html">Sermon</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="giving.html">Giving</a></li>
-            </ul>
-        </nav>
-    </header>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christ Holy-Hill's of Power Ministry Worldwide - Giving</title>
+  <link rel="shortcut icon" href="Img/church logo.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
-<!-- giving section -->
-    <section id="giving_container">
-        <div class="giving-container">
-            <h1>Support Our Mission</h1>
-            <p>Your generous donations help us to continue our work in the community, support missions, and share the love of Jesus Christ.</p>
-             
-            <div class="giving_container">
-             <div class="first-giving">
-                <h2>UBA BANK</h2>
-                <table>
-                  <thead>
-                    <th>Offering Account</th>
-                    <th>Tithe Account</th>
-                    <th>Project Account</th>
-                  </thead>
-                  <tbody>
-                    <tr>
-                    <td>1027241984</td>
-                    <td>1027241984</td>
-                    <td>1027241984</td>
-                  </tr>
-                  </tbody>
-                </table>
-             </div>
-             <!-- <div class="second-giving">
-              <h2>ZENITH BANK</h2>
-              <table>
-                <thead>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <!-- Background Video -->
+<video autoplay muted loop playsinline id="bgVideo">
+  <source src="Img/WhatsApp Video 2024-07-06 at 10.08.54_4f0e61b7.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Img/church logo.jpg" alt="Church Logo" style="height: 45px;" class="me-2 rounded-circle">
+      <span class="fw-bold text-warning"></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item ">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link  dropdown-toggle px-3 text-white fw-semibold" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About
+  </a>
+  <ul class="dropdown-menu bg-dark border-0 shadow" aria-labelledby="aboutDropdown">
+    <li><a class="dropdown-item text-white" href="Aboutus.html">About Us</a></li>
+    <li><a class="dropdown-item text-white" href="sermon.html">Sermon</a></li>
+    <li><a class="dropdown-item text-white" href="gallery.html">Gallery</a></li>
+  </ul>
+</li>
+
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="#services">Ministries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active px-3 text-white fw-semibold hover-underline" href="#giving">Giving</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- Giving Section -->
+<section id="giving_container" class="py-5 text-white" style="background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)), url('images/giving-bg.jpg') center/cover no-repeat;">
+  <div class="container">
+    <div class="text-center mb-5" data-aos="fade-down">
+      <h1 class="fw-bold text-warning"><i class="bi bi-hand-heart-fill me-2"></i>Support Our Mission</h1>
+      <p class="lead text-light">Your generous donations help us continue our work in the community, support missions, and share the love of Jesus Christ.</p>
+    </div>
+
+    <!-- Bank Info Cards -->
+    <div class="row mb-5" data-aos="fade-up" data-aos-delay="100">
+      <div class="col-md-6 mx-auto">
+        <div class="card bg-dark text-white shadow-lg border-light">
+          <div class="card-body">
+            <h3 class="card-title text-center text-warning"><i class="bi bi-bank2 me-2"></i>UBA BANK</h3>
+            <table class="table table-bordered table-hover text-center text-white mt-3">
+              <thead class="table-warning text-dark">
+                <tr>
                   <th>Offering Account</th>
                   <th>Tithe Account</th>
                   <th>Project Account</th>
-                </thead>
-                <tbody>
-                  <tr>
-                  <td>1228548099</td>
-                  <td>1228548068</td>
-                  <td>1013355338</td>
                 </tr>
-                </tbody>
-              </table>
-           </div> -->
-            </div>
-
-            <div class="giving-form">
-                <h2>Online Giving Form</h2>
-                <form action="process_donation.php" method="POST">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required>
-
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
-                    <label for="amount">Donation Amount:</label>
-                    <input type="number" id="amount" name="amount" required>
-
-                    <label for="message">Message (Optional):</label>
-                    <textarea id="message" name="message"></textarea>
-
-                    <button type="submit" class="btn">Donate Now</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <!-- info section -->
-    <section class="info_section layout_padding2-top">
-        <div class="social_container">
-          <h6 style="text-align:center;">Join us on</h6>
-          <div class="social_box">
-            <a style="text-decoration: none;" href="https://web.facebook.com/profile.php?id=61564442342730">
-              <i class="fa fa-facebook" aria-hidden="true"></i>
-            </a>
-            <a style="text-decoration: none;" href="https://x.com/twitt_login">
-              <i class="fa fa-twitter" aria-hidden="true"></i>
-            </a>
-            <a style="text-decoration: none;" href="https://www.instagram.com/accounts/login/?hl=en">
-              <i class="fa fa-instagram" aria-hidden="true"></i>
-            </a>
-            <a style="text-decoration: none;" href="https://www.youtube.com/">
-              <i class="fa fa-youtube" aria-hidden="true"></i>
-            </a>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1027241984</td>
+                  <td>1027241984</td>
+                  <td>1027241984</td>
+                </tr>
+              </tbody>
+            </table>
           </div>
         </div>
-      <div class="info_container ">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 col-lg-3">
-                <h6>
-                  ABOUT US
-                </h6>
-                <p style="font-size: 20px;">
-                  Welcome to CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE,<br>
-                  A place of Encounter and Empowerment. <br> 
-                  Thank you for choosing CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE!"
-                </p>
+      </div>
+    </div>
+
+    <!-- Giving Form -->
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="200">
+      <div class="col-lg-8">
+        <div class="card bg-light shadow-lg">
+          <div class="card-body p-5">
+            <h2 class="text-center mb-4 text-dark fw-bold"><i class="bi bi-credit-card-fill me-2 text-warning"></i>Online Giving Form</h2>
+            <form action="process_donation.php" method="POST">
+              <div class="mb-3">
+                <label for="name" class="form-label fw-semibold">Name</label>
+                <input type="text" class="form-control" id="name" name="name" required>
               </div>
-              <div class="col-md-6 col-lg-3">
-              <form action="subscribe.php" method="POST">
-                <h6>
-                    NEWSLETTER
-                  </h6>
-                  <h5 style="font-family: 'Times New Roman', Times, serif;font-size: 15px;">NEW TO CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE?</h5>
-                  <em style="font-size:15px;">Subscribe to our newsletter to get updates on our latest info!</em>
-                  <div class="mycontainer">
-                   <div class="inputs-container">
-                    <i class="fa fa-envelope"></i>
-                    <input type="email" name="email" placeholder="Enter your E-mail Address" required>
-                </div>
-                <div class="button_gender">
-                    <label style="color: white;" >
-                        <input type="radio" name="gender" value="Male" required> MALE
-                    </label>
-                    <label style="color: white;" >
-                        <input type="radio" name="gender" value="Female" required> FEMALE
-                    </label>
-                </div>
-            </div>
-            <span class="checkbox-container">
-                <input type="checkbox" name="agree" id="agree" required>
-                <p >I agree to Christ Holy-Hill's of Power Ministry World wide Policy and Cookie Policy. You can Unsubscribe at any time.</p>
-            </span>
-            <div class="link">
-                <a href="privacy.html">I accept the Legal Terms</a>
-            </div>
-            <button style="color:#fff; background-color:#f16179;margin-left:70px;width: 100px;height: 40px;border-radius:5px;" type="submit">Subscribe</button>
-             </form>
-             </div>
-              <div class="col-md-6 col-lg-3">
-                <h6>
-                  NEED HELP
-                </h6>
-                <p>
-                  - Introduction <br>
-                  -  Spiritual Support <br>
-                  - Financial & Material Assistance <br>
-                  - Community Support & Resources <br>
-                  - Volunteer & Donations
-    
-                </p>
+
+              <div class="mb-3">
+                <label for="email" class="form-label fw-semibold">Email</label>
+                <input type="email" class="form-control" id="email" name="email" required>
               </div>
-              <div class="col-md-6 col-lg-3">
-                <h6>
-                  CONTACT US
-                </h6>
-                <div class="info_link-box">
-                  <a style="text-decoration: none"; href="https://www.google.com/maps/dir/Odi-Olowo%2FOjuwoye+LCDA,+Odi-Olowo,+36+Town+Planning+Way,+Ojuwoye+LCDACDA,+Ilupeju,+Lagos+100001,+Lagos/Odi-Olowo%2FOjuwoye+LCDA,+Odi-Olowo,+36+Town+Planning+Way,+Ojuwoye+LCDACDA,+Ilupeju,+Lagos+100001,+Lagos/">
-                    <i class="fa fa-map-marker" aria-hidden="true"></i>
-                    <span> Ewekoro Local Government Papalanto Ogun state Nigeria</span>
-                  </a>
-                  <a style="text-decoration: none"; href="+2348089231475">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    <span>
-                      <span>+234 7064880359, +234 9054408613</span>
-                    </span>
-                  </a>
-                  <a style="text-decoration: none"; href="www.gmail.com">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <span> christholyhillsofpowerministry@gmail.com</span>
-                  </a>
-                  <a style="text-decoration: none"; href="">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    <span>www.christholyhillsofpowerministry.ng</span>
-                  </a>
-                </div>
+
+              <div class="mb-3">
+                <label for="amount" class="form-label fw-semibold">Donation Amount</label>
+                <input type="number" class="form-control" id="amount" name="amount" required>
               </div>
-            </div>
+
+              <div class="mb-4">
+                <label for="message" class="form-label fw-semibold">Message (Optional)</label>
+                <textarea class="form-control" id="message" name="message" rows="4"></textarea>
+              </div>
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-warning fw-bold px-4 py-2 shadow"><i class="bi bi-send-fill me-1"></i>Donate Now</button>
+              </div>
+            </form>
           </div>
         </div>
-        </section>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- Info & Footer -->
+<footer class="bg-dark text-white pt-5 pb-3 position-relative">
   
-      <!-- Footer -->
-      <footer class="footer">
-          <div class="container">
-              <p>&copy; 2025 All rights reserved By Christ Holy-Hill's of Power Ministry Worldwide.</p>
-          </div>
-      </footer>
+  <!-- Social Media Icons -->
+  <div class="container mb-4" >
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://facebook.com" target="_blank" class="text-white fs-4" title="Facebook">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://youtube.com" target="_blank" class="text-white fs-4" title="YouTube">
+        <i class="fa fa-youtube-play"></i>
+      </a>
+      <a href="https://wa.me/2347064880359" target="_blank" class="text-white fs-4" title="WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-white fs-4" title="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="mailto:christholyhillsofpowerministry@gmail.com" class="text-white fs-4" title="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </div>
 
-      <button id="goTopBtn" class="go-top-button">&uarr;</button>
-      <!-- footer section -->
-       <!-- got to top button -->
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Us -->
+      <div class="col-md-3">
+  <!-- About Us Section with Image -->
+  <h5 class="text-uppercase mb-3 fw-bold text-warning">About Us</h5>
   
-      <script src="script.js"></script>
+  <!-- Image (you can adjust the src to your own image path) -->
+  <img src="Img/church logo.jpg" alt="About Us Image" class="img-fluid rounded shadow mb-2" style="height: 150px; object-fit: cover;">
+  <p><span class="text-warning">Christ Holy-Hill's of Power Ministry Worldwide</span></p>
+
+  <!-- Description Text -->
+  <p class="small">
+    A place of Encounter and Empowerment. Join us to experience God's presence and power in a dynamic community of faith.
+  </p>
+</div>
+
+
+      <!-- Newsletter Subscription -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Newsletter</h5>
+        <form action="subscribe.php" method="POST" class="bg-secondary bg-opacity-10 p-3 rounded-3">
+          <input type="email" class="form-control mb-2" name="email" placeholder="Your Email" required>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+            <label class="form-check-label text-white" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+            <label class="form-check-label text-white" for="female">Female</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+            <label class="form-check-label text-white" for="agree">I agree to the policy.</label>
+          </div>
+          <a href="privacy.html" class="text-info small d-block mb-2 text-decoration-underline">I accept the Legal Terms</a>
+          <button type="submit" class="btn btn-warning text-dark fw-semibold w-100">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Help Links -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Need Help</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Introduction</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Spiritual Support</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Material Assistance</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Community Support</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Contact</h5>
+        <p class="small mb-2"><i class="fa fa-map-marker me-2 text-warning"></i>Ewekoro LG, Ogun State, Nigeria</p>
+        <p class="small mb-2"><i class="fa fa-phone me-2 text-warning"></i>+234 706 488 0359, +234 905 440 8613</p>
+        <p class="small mb-2"><i class="fa fa-envelope me-2 text-warning"></i>christholyhillsofpowerministry@gmail.com</p>
+        <p class="small mb-0"><i class="fa fa-globe me-2 text-warning"></i>www.christholyhillsofpowerministry.ng</p>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0 small">&copy; 2025 All rights reserved by <span class="text-warning">Christ Holy-Hill's of Power Ministry Worldwide</span>.</p>
+    </div>
+  </div>
+
+  <!-- Go to Top Button -->
+  <button id="goTopBtn"
+    class="btn btn-warning text-dark fw-bold position-fixed bottom-0 end-0 shadow"
+    style="margin-right: 1rem; margin-bottom: 1rem; z-index: 999;"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    &uarr;
+  </button>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Add before closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 800
+  });
+</script>
+<script src="script.js"></script>
+
 </body>
 </html>

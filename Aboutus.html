@@ -1,186 +1,269 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
-    <link rel="shortcut icon" href="Img/church logo.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">  <!-- Font Awesome CDN -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Christ Holy-Hill's of Power Ministry Worldwide - About Us</title>
+  <link rel="shortcut icon" href="Img/church logo.jpg" type="image/x-icon">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- AOS CSS -->
+<link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <div class="logo-container">
-                <img src="Img/church logo.jpg" alt="Church Logo" class="logo-img">
-            </div>
-            <button class="hamburger" onclick="toggleMenu()">☰</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Aboutus.html">Our Mission</a></li>
-                <li><a href="index.html#services">Ministries</a></li>
-                <li><a href="event.html">Events</a></li>
-                <li><a href="sermon.html">Sermon</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="giving.html">Giving</a></li>
-            </ul>
-        </nav>
-    </header>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="Img/church logo.jpg" alt="Church Logo" style="height: 45px;" class="me-2 rounded-circle">
+      <span class="fw-bold text-warning"></span>
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav text-center">
+        <li class="nav-item ">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="index.html">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+  <a class="nav-link active dropdown-toggle px-3 text-white fw-semibold" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+    About
+  </a>
+  <ul class="dropdown-menu bg-dark border-0 shadow" aria-labelledby="aboutDropdown">
+    <li><a class="dropdown-item active text-white" href="Aboutus.html">About Us</a></li>
+    <li><a class="dropdown-item text-white" href="sermon.html">Sermon</a></li>
+    <li><a class="dropdown-item text-white" href="gallery.html">Gallery</a></li>
+  </ul>
+</li>
 
-    <!-- About section -->
-     <section id="aboutus">
-     <div>
-        <h1 style="background: linear-gradient(#ff9800, grey);color: #fff; margin-bottom: 10px;text-transform: uppercase;font-size: 1.7rem;">Our Mission</h1>
-        <h3>A Place of Encounter and Empowerment.</h3>
-        <span>(Exodus 3:1-10)</span>
-        <div class="details">
-          <p> <span>1.</span> A place of Prophetic Encounter, Holy Ghost Encounter and Holy Encounter. <span>(Acts 2:1-4 $ Matthew 17:1-9).</span></p>
-          <p> <span>2.</span> A place of Spiritual, Mental and Moral Development and Empowerment. <span> (Act 2:1-7 $ Exodus 4:1-9).</span></p>
-          <p><span>3.</span> A place of divers Signs and Wonders. <span>(Act 2:1-7 $ Exodus 4:1-9).</span></p>
-          <p><span>4.</span> The Place of His Presence and His Power experience. <span> (Mathew 17:1-18).</span></p>
-          <p><span>5.</span> The Place of Salvation and Love. <span> ( 2 Corinthians 3:17 ).</span></p>
-          <p><span>6.</span> A place of Restoration to Destiny and Glory. <span>( Exodus 3:1-12 ).</span></p>
-          <p><span>7.</span> A place of Divine Visitation. <span>( Daniel 10 : 1_21 ).</span></p>
-          <p><span>8.</span> A place of Destiny Discover. <span>( Genesis 28 : 10-18 ).</span></p>
-          <p><span>9.</span> A place of Divine Encounter of His Love and Mercy. <span>( Psalm 3 : 4-5 ).</span></p>
-          <p><span>10.</span> The place of His Purifying fire and Power. <span>( Obadiah 1: 18 ).</span></p>
-          <p><span>11.</span> The place of Encountering Liberation Power.</p>
-        </div>
-        <div class="mandate">
-            <h2>Our Mandate</h2>
-            <p>Go and Create and atmosphere for me to have Encounter with my people to bring them from the land of capitivity
-            to their land of rest and fulfillment of Destiny.</p>
-        </div>
-        <div class="vision">
-             <h2>Our vision</h2>
-             <p>To create an atmosphere, place and Environment of Encounter with God and his Spirit
-            where God's people can discover their true identity in Christ Jesus and be Spiritually,
-            Mentally and Physically Empowered with the fulfillment of Destiny and Purpose, where
-            their God Ordained Purpose can be Unvailed to them through Spiritual Encounters, Vision, Revelation
-             Angelic and Prophetic Encounter in Prayer and in God's Word, Via study and Meditation.</p>
-        </div>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="#services">Ministries</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="#events">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link px-3 text-white fw-semibold hover-underline" href="#giving">Giving</a>
+        </li>
+      </ul>
     </div>
-     </section>
+  </div>
+</nav>
 
-<!-- info section -->
-<section class="info_section layout_padding2-top">
-    <div class="social_container">
-      <h6 style="text-align:center;">Join us on</h6>
-      <div class="social_box">
-        <a style="text-decoration: none;" href="https://web.facebook.com/profile.php?id=61564442342730">
-          <i class="fa fa-facebook" aria-hidden="true"></i>
-        </a>
-        <a style="text-decoration: none;" href="https://x.com/twitt_login">
-          <i class="fa fa-twitter" aria-hidden="true"></i>
-        </a>
-        <a style="text-decoration: none;" href="https://www.instagram.com/accounts/login/?hl=en">
-          <i class="fa fa-instagram" aria-hidden="true"></i>
-        </a>
-        <a style="text-decoration: none;" href="https://www.youtube.com/">
-          <i class="fa fa-youtube" aria-hidden="true"></i>
-        </a>
+
+<section id="aboutus" class="py-5" style="background: url('your-background.jpg') center/cover no-repeat;">
+  <div class="container bg-white bg-opacity-90 p-5 rounded shadow-lg">
+
+    <h1 class="mb-4 fw-bold text-warning" data-aos="fade-down">
+      <i class="bi bi-bullseye"></i> Our Mission
+    </h1>
+
+    <h3 class="text-dark fw-semibold" data-aos="fade-up">A Place of Encounter and Empowerment.</h3>
+    <p class="text-muted" data-aos="fade-up" data-aos-delay="100">(Exodus 3:1-10)</p>
+
+    <div class="details mt-4">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="100">
+          <i class="bi bi-fire text-danger me-2"></i>
+          A place of Prophetic Encounter, Holy Ghost Encounter and Holy Encounter.
+          <span class="text-muted">(Acts 2:1-4 & Matthew 17:1-9)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="150">
+          <i class="bi bi-people-fill text-primary me-2"></i>
+          A place of Spiritual, Mental and Moral Development and Empowerment.
+          <span class="text-muted">(Acts 2:1-7 & Exodus 4:1-9)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="200">
+          <i class="bi bi-stars text-info me-2"></i>
+          A place of divers Signs and Wonders.
+          <span class="text-muted">(Acts 2:1-7 & Exodus 4:1-9)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="250">
+          <i class="bi bi-lightning-charge-fill text-warning me-2"></i>
+          The Place of His Presence and His Power experience.
+          <span class="text-muted">(Matthew 17:1-18)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="300">
+          <i class="bi bi-heart-fill text-danger me-2"></i>
+          The Place of Salvation and Love.
+          <span class="text-muted">(2 Corinthians 3:17)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="350">
+          <i class="bi bi-arrow-repeat text-success me-2"></i>
+          A place of Restoration to Destiny and Glory.
+          <span class="text-muted">(Exodus 3:1-12)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="400">
+          <i class="bi bi-eye-fill text-info me-2"></i>
+          A place of Divine Visitation.
+          <span class="text-muted">(Daniel 10:1-21)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="450">
+          <i class="bi bi-binoculars-fill text-secondary me-2"></i>
+          A place of Destiny Discovery.
+          <span class="text-muted">(Genesis 28:10-18)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="500">
+          <i class="bi bi-droplet-fill text-primary me-2"></i>
+          A place of Divine Encounter of His Love and Mercy.
+          <span class="text-muted">(Psalm 3:4-5)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="550">
+          <i class="bi bi-fire text-danger me-2"></i>
+          The place of His Purifying fire and Power.
+          <span class="text-muted">(Obadiah 1:18)</span>
+        </li>
+        <li class="list-group-item bg-transparent border-0" data-aos="fade-right" data-aos-delay="600">
+          <i class="bi bi-unlock-fill text-success me-2"></i>
+          The place of Encountering Liberation Power.
+        </li>
+      </ul>
+    </div>
+
+    <div class="mandate mt-5" data-aos="fade-up">
+      <h2 class="mb-4 fw-bold text-warning"><i class="bi bi-flag-fill me-2 text-warning"></i>Our Mandate</h2>
+      <p class="text-muted">
+        Go and create an atmosphere for Me to have an encounter with My people to bring them from the land of captivity
+        to their land of rest and fulfillment of destiny.
+      </p>
+    </div>
+
+    <div class="vision mt-4" data-aos="fade-up" data-aos-delay="100">
+      <h2 class="mb-4 fw-bold text-warning"><i class="bi bi-eye-fill me-2 text-warning"></i>Our Vision</h2>
+      <p class="text-muted">
+        To create an atmosphere, place, and environment of encounter with God and His Spirit where God's people can discover
+        their true identity in Christ Jesus and be spiritually, mentally, and physically empowered for the fulfillment of
+        destiny and purpose. Where their God-ordained purpose can be unveiled through spiritual encounters, visions,
+        revelations, angelic and prophetic encounters in prayer and in God's Word through study and meditation.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+
+<!-- Info & Footer -->
+<footer class="bg-dark text-white pt-5 pb-3 position-relative">
+  
+  <!-- Social Media Icons -->
+  <div class="container mb-4" >
+    <div class="d-flex justify-content-center gap-3">
+      <a href="https://facebook.com" target="_blank" class="text-white fs-4" title="Facebook">
+        <i class="fa fa-facebook-official"></i>
+      </a>
+      <a href="https://youtube.com" target="_blank" class="text-white fs-4" title="YouTube">
+        <i class="fa fa-youtube-play"></i>
+      </a>
+      <a href="https://wa.me/2347064880359" target="_blank" class="text-white fs-4" title="WhatsApp">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+      <a href="https://instagram.com" target="_blank" class="text-white fs-4" title="Instagram">
+        <i class="fa fa-instagram"></i>
+      </a>
+      <a href="mailto:christholyhillsofpowerministry@gmail.com" class="text-white fs-4" title="Email">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row g-4">
+      <!-- About Us -->
+      <div class="col-md-3">
+  <!-- About Us Section with Image -->
+  <h5 class="text-uppercase mb-3 fw-bold text-warning">About Us</h5>
+  
+  <!-- Image (you can adjust the src to your own image path) -->
+  <img src="Img/church logo.jpg" alt="About Us Image" class="img-fluid rounded shadow mb-2" style="height: 150px; object-fit: cover;">
+  <p><span class="text-warning">Christ Holy-Hill's of Power Ministry Worldwide</span></p>
+
+  <!-- Description Text -->
+  <p class="small">
+    A place of Encounter and Empowerment. Join us to experience God's presence and power in a dynamic community of faith.
+  </p>
+</div>
+
+
+      <!-- Newsletter Subscription -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Newsletter</h5>
+        <form action="subscribe.php" method="POST" class="bg-secondary bg-opacity-10 p-3 rounded-3">
+          <input type="email" class="form-control mb-2" name="email" placeholder="Your Email" required>
+          <div class="form-check form-check-inline">
+            <input class="form-check-input" type="radio" name="gender" id="male" value="Male" required>
+            <label class="form-check-label text-white" for="male">Male</label>
+          </div>
+          <div class="form-check form-check-inline mb-2">
+            <input class="form-check-input" type="radio" name="gender" id="female" value="Female" required>
+            <label class="form-check-label text-white" for="female">Female</label>
+          </div>
+          <div class="form-check mb-2">
+            <input class="form-check-input" type="checkbox" id="agree" name="agree" required>
+            <label class="form-check-label text-white" for="agree">I agree to the policy.</label>
+          </div>
+          <a href="privacy.html" class="text-info small d-block mb-2 text-decoration-underline">I accept the Legal Terms</a>
+          <button type="submit" class="btn btn-warning text-dark fw-semibold w-100">Subscribe</button>
+        </form>
+      </div>
+
+      <!-- Help Links -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Need Help</h5>
+        <ul class="list-unstyled small">
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Introduction</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Spiritual Support</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Material Assistance</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Community Support</a></li>
+          <li><a href="#" class="text-white text-decoration-none d-block py-1">Volunteer</a></li>
+        </ul>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-md-3">
+        <h5 class="text-uppercase mb-3 fw-bold text-warning">Contact</h5>
+        <p class="small mb-2"><i class="fa fa-map-marker me-2 text-warning"></i>Ewekoro LG, Ogun State, Nigeria</p>
+        <p class="small mb-2"><i class="fa fa-phone me-2 text-warning"></i>+234 706 488 0359, +234 905 440 8613</p>
+        <p class="small mb-2"><i class="fa fa-envelope me-2 text-warning"></i>christholyhillsofpowerministry@gmail.com</p>
+        <p class="small mb-0"><i class="fa fa-globe me-2 text-warning"></i>www.christholyhillsofpowerministry.ng</p>
       </div>
     </div>
-  <div class="info_container ">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-lg-3">
-            <h6>
-              ABOUT US
-            </h6>
-            <p style="font-size: 20px;">
-              Welcome to CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE,<br>
-              A place of Encounter and Empowerment. <br> 
-              Thank you for choosing CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE!"
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-          <form action="subscribe.php" method="POST">
-            <h6>
-                NEWSLETTER
-              </h6>
-              <h5 style="font-family: 'Times New Roman', Times, serif;font-size: 15px;">NEW TO CHRIST HOLY-HILL'S OF POWER MINISTRY WORLDWIDE?</h5>
-              <em style="font-size:15px;">Subscribe to our newsletter to get updates on our latest info!</em>
-              <div class="mycontainer">
-               <div class="inputs-container">
-                <i class="fa fa-envelope"></i>
-                <input type="email" name="email" placeholder="Enter your E-mail Address" required>
-            </div>
-            <div class="button_gender">
-                <label style="color: white;" >
-                    <input type="radio" name="gender" value="Male" required> MALE
-                </label>
-                <label style="color: white;" >
-                    <input type="radio" name="gender" value="Female" required> FEMALE
-                </label>
-            </div>
-        </div>
-        <span class="checkbox-container">
-            <input type="checkbox" name="agree" id="agree" required>
-            <p >I agree to Christ Holy-Hill's of Power Ministry World wide Policy and Cookie Policy. You can Unsubscribe at any time.</p>
-        </span>
-        <div class="link">
-            <a href="privacy.html">I accept the Legal Terms</a>
-        </div>
-        <button style="color:#fff; background-color:#f16179;margin-left:70px;width: 100px;height: 40px;border-radius:5px;" type="submit">Subscribe</button>
-         </form>
-         </div>
-          <div class="col-md-6 col-lg-3">
-            <h6>
-              NEED HELP
-            </h6>
-            <p>
-              - Introduction <br>
-              -  Spiritual Support <br>
-              - Financial & Material Assistance <br>
-              - Community Support & Resources <br>
-              - Volunteer & Donations
 
-            </p>
-          </div>
-          <div class="col-md-6 col-lg-3">
-            <h6>
-              CONTACT US
-            </h6>
-            <div class="info_link-box">
-              <a style="text-decoration: none"; href="https://www.google.com/maps/dir/Odi-Olowo%2FOjuwoye+LCDA,+Odi-Olowo,+36+Town+Planning+Way,+Ojuwoye+LCDACDA,+Ilupeju,+Lagos+100001,+Lagos/Odi-Olowo%2FOjuwoye+LCDA,+Odi-Olowo,+36+Town+Planning+Way,+Ojuwoye+LCDACDA,+Ilupeju,+Lagos+100001,+Lagos/">
-                <i class="fa fa-map-marker" aria-hidden="true"></i>
-                <span> Ewekoro Local Government Papalanto Ogun state Nigeria</span>
-              </a>
-              <a style="text-decoration: none"; href="+2348089231475">
-                <i class="fa fa-phone" aria-hidden="true"></i>
-                <span>
-                  <span>+234 7064880359, +234 9054408613</span>
-                </span>
-              </a>
-              <a style="text-decoration: none"; href="www.gmail.com">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span> christholyhillsofpowerministry@gmail.com</span>
-              </a>
-              <a style="text-decoration: none"; href="">
-                <i class="fa fa-envelope" aria-hidden="true"></i>
-                <span>www.christholyhillsofpowerministry.ng</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <!-- Footer Bottom -->
+    <div class="text-center mt-4 border-top pt-3">
+      <p class="mb-0 small">&copy; 2025 All rights reserved by <span class="text-warning">Christ Holy-Hill's of Power Ministry Worldwide</span>.</p>
     </div>
-    </section>
+  </div>
 
-  <!-- Footer -->
-  <footer class="footer">
-      <div class="container">
-          <p>&copy; 2025 All rights reserved By Christ Holy-Hill's of Power Ministry Worldwide.</p>
-      </div>
-  </footer>
+  <!-- Go to Top Button -->
+  <button id="goTopBtn"
+    class="btn btn-warning text-dark fw-bold position-fixed bottom-0 end-0 shadow"
+    style="margin-right: 1rem; margin-bottom: 1rem; z-index: 999;"
+    onclick="window.scrollTo({ top: 0, behavior: 'smooth' });">
+    &uarr;
+  </button>
+</footer>
 
-  <button id="goTopBtn" class="go-top-button">&uarr;</button>
-  <!-- footer section -->
-   <!-- got to top button -->
 
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Add before closing </body> tag -->
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    once: true,
+    duration: 800
+  });
+</script>
+<script src="script.js"></script>
+
 </body>
 </html>
